@@ -25,35 +25,15 @@
   }
 
   const bgMusic = document.getElementById('bg-music');
-  let musicStarted = false;
 
   function startMusicFromNote() {
-    if (!bgMusic || musicStarted) return;
-    musicStarted = true;
+    if (!bgMusic) return;
 
-    const beginPlayback = () => {
-      try {
-        bgMusic.volume = 0.45;
-        bgMusic.muted = false;
-        bgMusic.currentTime = 15;
-      } catch (error) {
-        // Ignore time-seek errors until the file is ready.
-      }
-
-      bgMusic.play().catch(() => {
-        // Some browsers still block playback until a later user gesture; this is expected in strict autoplay policies.
-      });
-    };
-
-    if (bgMusic.readyState >= 1) {
-      beginPlayback();
-    } else {
-      bgMusic.load();
-      bgMusic.addEventListener('loadedmetadata', () => {
-        bgMusic.currentTime = 15;
-        bgMusic.play().catch(() => {});
-      }, { once: true });
-    }
+    bgMusic.volume = 0.45;
+    bgMusic.muted = false;
+    bgMusic.play().catch(() => {
+      // Browsers may block playback until a user interaction, which is expected.
+    });
   }
 
   function openNote(event) {
@@ -88,9 +68,6 @@
       restorePage();
     }
   }
-
-  document.addEventListener('pointerdown', () => startMusicFromNote(), { once: true });
-  document.addEventListener('keydown', () => startMusicFromNote(), { once: true });
 
   document.querySelectorAll('[data-note-open]').forEach((button) => {
     button.addEventListener('click', openNote);
