@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#faf5ef">
+  <meta name="description" content="A little bouquet of tulips, a few capybaras, and a whole lot of love. Just for you.">
+  <title>Tulips, for you</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="message.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <main class="gift" id="bouquet">
+
+      <section class="bouquet-scene" aria-label="Your bouquet and capybara friends">
+        <div class="bouquet-halo" aria-hidden="true"></div>
+        <p class="handwritten flower-caption">picked with love,<br>just for you.</p>
+
+        <!-- Photographic tulips, arranged in a custom paper wrap. No animated flowers. -->
+        <svg class="bouquet-art" viewBox="0 0 600 640" role="img" aria-labelledby="bouquet-title">
+          <title id="bouquet-title">A full bouquet of real pink tulips wrapped in cream and blush paper with a rose ribbon</title>
+          <defs>
+            <clipPath id="tulip-wrap-clip"><path d="M0 0H600V275L300 420 0 275Z"/></clipPath>
+          </defs>
+          <g class="paper-back">
+            <path d="M85 226 156 176 326 330 439 177 519 243 352 588 260 582Z" fill="#f0dbcd" stroke="#e4c4b4" stroke-width="1.2"/>
+            <path d="m105 185 190 141 173-148 55 138-186 274-67-9Z" fill="#fffaf1" stroke="#eadbca" stroke-width="1.2"/>
+            <path d="m122 246 142 329M480 230 336 576" fill="none" stroke="#e8d6c5" stroke-width="1.2"/>
+          </g>
+          <image href="assets/pink-tulips.png" x="15" y="50" width="570" height="356.03" preserveAspectRatio="xMidYMid meet" clip-path="url(#tulip-wrap-clip)"/>
+          <g class="paper-front">
+            <path d="M90 310Q191 346 312 407L349 596 262 583Z" fill="#efd9c6" stroke="#ddbea7" stroke-width="1.2"/>
+            <path d="M505 302Q396 359 295 408L258 584 335 599Z" fill="#f7e7d8" stroke="#dfc5b0" stroke-width="1.2"/>
+            <path d="m90 310 205 99M505 302 304 408M124 341l153 219m184-217L323 561" fill="none" stroke="#fff8ee" stroke-width="2.5" opacity=".8"/>
+            <path d="m299 424-20 155m28-151 15 156" fill="none" stroke="#d5b499" stroke-width="1.2" opacity=".65"/>
+            <path d="M237 477q62 19 114 2l-3 21q-47 18-100-1Z" fill="#bd7081"/>
+            <path d="m250 481 91 5" fill="none" stroke="#dfa0aa" stroke-width="2"/>
+            <path d="M294 493c-25 4-63-46-84-20-20 29 57 37 84 20Z" fill="#d294a0" stroke="#b2687b" stroke-width="1.4"/>
+            <path d="M299 494c20-7 39-60 65-39 29 25-35 47-65 39Z" fill="#dba0aa" stroke="#b2687b" stroke-width="1.4"/>
+            <path d="M292 496q-31 19-39 66l22-9 8 16q0-37 17-67" fill="#bc7184"/>
+            <path d="M302 495q25 11 49 51l-25-6-1 18q-7-34-29-57" fill="#ce8b9a"/>
+            <path d="M286 485q12-7 23-1l3 18q-13 8-26 0Z" fill="#c17b8c" stroke="#b2687b" stroke-width="1.2"/>
+            <path d="M216 478q24 4 61 15m80-30q-15 19-39 26" fill="none" stroke="#f1c7cc" stroke-width="1.8"/>
+          </g>
+        </svg>
+
+        <button class="gift-tag" type="button" data-note-open aria-haspopup="dialog" aria-label="Read the note attached to your bouquet">
+          <span class="tag-hole" aria-hidden="true"></span>
+          <span class="handwritten">for you</span>
+          <span class="tag-small">WITH ALL MY LOVE</span>
+        </button>
+
+        <div class="capy-friend">
+          <p id="capy-message" class="capy-bubble" role="status" aria-live="polite" aria-atomic="true">Special delivery for<br>the prettiest girl.</p>
+          <button class="capy-button" id="capy-button" type="button" aria-label="Tap your capybara friend for a sweet message" aria-describedby="capy-hint">
+            <img class="sticker" id="capy-image" src="assets/capybara-love.png" alt="Cute capybara holding a pink heart" width="512" height="512">
+          </button>
+          <span id="capy-hint" class="handwritten capy-hint">psst... tap me!</span>
+        </div>
+        <span class="edition-label">a forever kind of bouquet</span>
+      </section>
+
+      <div class="gift-actions">
+        <button class="note-button" type="button" data-note-open aria-haspopup="dialog">There's a note for you</button>
+      </div>
+    </main>
+
+  </div>
+
+  <dialog class="letter-dialog" id="letter-dialog" aria-labelledby="letter-title">
+    <div class="letter-paper">
+      <div class="letter-topline">
+        <p class="eyebrow">A LITTLE NOTE, JUST FOR YOU</p>
+        <button class="close-button" type="button" id="close-note" autofocus>Close</button>
+      </div>
+      <img class="letter-capy sticker" src="assets/capybara-hello.png" alt="A capybara waving hello" width="512" height="512">
+      <h2 id="letter-title"><span data-recipient>My love</span>,</h2>
+      <div class="letter-copy" id="letter-copy">
+        <p>hiii my pretty babyyy, my mhikaaa 🥺💗</p>
+        <p>first of all, i'm really really sorry pooo, my loveee. i know i upset you earlier kasi hindi ko naipakita yung excitement ko when you finally chatted me after a long time. i'm sorry if i made you feel na parang hindi ako happy na kausap ka ulit, kasi babyyy, nagtampo lang din po ako earlier kaya hindi ko masyadong naipakita yung excitement kooo. 🥹</p>
+        <p>i know you've been waiting din po to talk to me, and instead of making you feel na super excited ako, i made you feel the opposite. i'm sorryyy, babyyy. hindi ko naman po intention na iparamdam sayo na hindi ako excited or hindi kita namiss. nagtampo lang talaga ako, pero that doesn't mean na hindi na ako happy whenever we talkkk.</p>
+        <p>please don't think na hindi na ako excited sayo or nagsasawa na ako, okayyy? kasi never pooo. kahit araw-araw pa tayong mag-usap, kahit paulit-ulit pa yung kwento natin, i'd still choose to listen to youuu. you're literally my favorite person, my favorite notification, and my favorite part of every dayyy. 🥺💗</p>
+        <p>i know na hindi excuse yung pagtatampo ko para hindi ko maipakita sayo how much i missed youuu. i should've expressed what i was feeling instead of letting my tampo affect how i treated you. i'm sorry pooo, my loveee. i understand why you got upset, and i don't want you to feel na parang ikaw lang yung excited na makausap ako.</p>
+        <p>kahit nagtampo ako, ikaw pa rin naman yung gusto kong kausap, kulitin, lambingin, at makasama araw-arawrr. i miss you even when we're just not talking for a few hoursss, and i always look forward to spending time with youuu. i'm sorry if my actions earlier didn't match what i actually felt.</p>
+        <p>i love you so so so muchhh, my pretty girl, my baby, my mhikaaa. you're so special to meee, and i never want you to feel otherwise. sorry po if i let my tampo get in the way of showing you how much you mean to meee.</p>
+        <p>can i have a little kiss from my pretty babyyy? mwamwamwaaa 🥹💋 i love youuu always, my loveee. 💗</p>
+      </div>
+      <p class="letter-signature handwritten" data-signature>Always yours</p>
+    </div>
+  </dialog>
+
+  <audio id="bg-music" preload="auto" loop aria-hidden="true">
+    <source src="assets/Kina - get you the moon (Slowed) [cw9QtATph1U].mp3" type="audio/mpeg">
+  </audio>
+
+  <noscript>
+    <section class="no-script-note">
+      <h2>My love,</h2>
+      <p>A little bouquet for you, just because. Thank you for making even the ordinary days feel special. On the busy days, the quiet days, and all the days in between, I'm always cheering for you. I love you, always.</p>
+      <p>Always yours</p>
+    </section>
+  </noscript>
+</body>
+</html>

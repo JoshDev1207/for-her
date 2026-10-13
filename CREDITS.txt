@@ -1,0 +1,59 @@
+ARTWORK AND FONT CREDITS
+=======================
+Assets found online on 13 October 2026 and included locally for this
+personal gift website. Please keep the attribution and license notices.
+
+PINK TULIPS
+Provider: PNGimg
+Title: Tulip PNG image
+Source: https://pngimg.com/image/8988
+Image: https://pngimg.com/uploads/tulip/tulip_PNG8988.png
+License stated by the source: Creative Commons Attribution-NonCommercial
+4.0 International (CC BY-NC 4.0).
+License: https://creativecommons.org/licenses/by-nc/4.0/
+Local file: assets/pink-tulips.png
+The original image file is unchanged. The page displays it in a cropped
+SVG viewport inside an original paper-wrap and ribbon composition.
+
+CAPYBARA STICKERS
+Creator: Surfsup.Vector
+Provider: Flaticon
+Collection: https://www.flaticon.com/stickers-pack/capybara-2
+License stated by the source: Flaticon License, free personal and
+commercial use with attribution. Original asset rights remain with the
+creator/provider. Included as decorative elements in this finished site.
+Do not resell or redistribute the stickers as a standalone asset pack.
+Terms: https://www.flaticon.com/legal
+
+Heart-holding capybara:
+https://www.flaticon.com/free-sticker/capybara_10776512
+https://cdn-icons-png.flaticon.com/512/10776/10776512.png
+Local file: assets/capybara-love.png
+
+Waving capybara:
+https://www.flaticon.com/free-sticker/capybara_10776461
+https://cdn-icons-png.flaticon.com/512/10776/10776461.png
+Local file: assets/capybara-hello.png
+
+Flower-carrying capybara:
+https://www.flaticon.com/free-sticker/capybara_10776420
+https://cdn-icons-png.flaticon.com/512/10776/10776420.png
+Local file: assets/capybara-flower.png
+
+The sticker files are unchanged. CSS adds a white sticker edge and a
+subtle shadow; the page displays the stickers at a smaller size.
+
+FONTS
+Cormorant Garamond, medium regular and medium italic
+https://fonts.google.com/specimen/Cormorant+Garamond
+Full license: assets/fonts/Cormorant-Garamond-LICENSE.txt
+
+Caveat, medium
+https://fonts.google.com/specimen/Caveat
+Full license: assets/fonts/Caveat-LICENSE.txt
+
+Both fonts are licensed under the SIL Open Font License, Version 1.1.
+The downloaded font files are included without modification.
+
+Website layout, paper wrap, ribbon composition, and code were made for
+this gift. The online artwork retains the licenses described above.
